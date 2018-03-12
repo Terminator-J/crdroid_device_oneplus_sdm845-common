@@ -154,6 +154,9 @@ persist.backup.ntpServer=0.pool.ntp.org
 # Keystore
 ro.hardware.keystore_desede=true
 
+# LMKD
+ro.lmk.log_stats=true
+
 # Media
 debug.stagefright.omx_default_rank=0
 
