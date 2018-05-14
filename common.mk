@@ -118,7 +118,6 @@ PRODUCT_PACKAGES += \
     libsynth \
     libtinycompress \
     libvolumelistener \
-    tinymix \
     OnePlusDiracGef
 
 PRODUCT_COPY_FILES += \
