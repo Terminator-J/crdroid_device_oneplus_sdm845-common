@@ -201,7 +201,10 @@ USE_DEX2OAT_DEBUG := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SettingsGoogle
+    Launcher3QuickStep \
+    Settings \
+    SettingsGoogle \
+    SystemUI
 
 # Display
 PRODUCT_PACKAGES += \
