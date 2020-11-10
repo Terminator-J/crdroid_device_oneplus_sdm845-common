@@ -404,6 +404,9 @@ service qcomsysd /system/vendor/bin/qcom-system-daemon
 on property:persist.vendor.qcomsysd.enabled=1
     enable qcomsysd
 
+on property:sys.boot_completed=1
+    setprop vendor.post_boot.parsed 1
+
 on property:persist.vendor.qcomsysd.enabled=0
     stop qcomsysd
 
