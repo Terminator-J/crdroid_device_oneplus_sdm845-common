@@ -2,5 +2,13 @@
   {
     "repository": "android_kernel_oneplus_sdm845",
     "target_path": "kernel/oneplus/sdm845"
+  },
+  {
+    "repository": "packages_apps_googlecamera",
+    "target_path": "packages/apps/GoogleCamera"
+  },
+  {
+    "repository": "proprietary_vendor_oneplus",
+    "target_path": "vendor/oneplus"
   }
 ]
