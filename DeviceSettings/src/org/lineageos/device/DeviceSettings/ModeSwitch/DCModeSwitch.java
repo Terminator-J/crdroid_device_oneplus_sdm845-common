@@ -23,14 +23,12 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.device.DeviceSettings.DeviceSettings;
-
 public class DCModeSwitch implements OnPreferenceChangeListener {
 
     private static final String DIMLAYER_FILE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en";
     private static final String DITHER_FILE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dither_en";
 
-    public static String getFileIfWritable(String file) {
+    static String getFileIfWritable(String file) {
         if (Utils.fileWritable(file)) {
             return file;
         }
@@ -38,18 +36,22 @@ public class DCModeSwitch implements OnPreferenceChangeListener {
     }
 
     public static boolean isSupported() {
-        return Utils.fileWritable(getFile());
+        return Utils.fileWritable(DIMLAYER_FILE) && Utils.fileWritable(DITHER_FILE);
     }
 
     public static boolean isCurrentlyEnabled(Context context) {
-        return Utils.getFileValueAsBoolean(getFile(), false);
+        return Utils.getFileValueAsBoolean(getFileIfWritable(DIMLAYER_FILE), false);
+    }
+
+    public static void setEnabled(boolean enabled) {
+        Utils.writeValue(getFileIfWritable(DIMLAYER_FILE), enabled ? "1" : "0");
+        Utils.writeValue(getFileIfWritable(DITHER_FILE), enabled ? "1" : "0");
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         Boolean enabled = (Boolean) newValue;
-        Utils.writeValue(getFileIfWritable(DIMLAYER_FILE), enabled ? "1" : "0");
-        Utils.writeValue(getFileIfWritable(DITHER_FILE), enabled ? "1" : "0");
+        DCModeSwitch.setEnabled(enabled);
         return true;
     }
 }

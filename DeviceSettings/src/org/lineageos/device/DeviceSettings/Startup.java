@@ -28,6 +28,7 @@ import androidx.preference.PreferenceManager;
 import android.os.SELinux;
 import android.util.Log;
 import android.widget.Toast;
+
 import java.util.List;
 
 public class Startup extends BroadcastReceiver {
@@ -54,8 +55,8 @@ public class Startup extends BroadcastReceiver {
                }
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_DC_SWITCH, false);
         if (enabled) {
-        restore(DCModeSwitch.getFile(), enabled);
-               }
+            DCModeSwitch.setEnabled(enabled);
+        }
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
         if (enabled) {
         restore(SRGBModeSwitch.getFile(), enabled);
