@@ -30,16 +30,9 @@ public class DCModeSwitch implements OnPreferenceChangeListener {
     private static final String DIMLAYER_FILE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en";
     private static final String DITHER_FILE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dither_en";
 
-    public static String getDimlayerFile() {
-        if (Utils.fileWritable(DIMLAYER_FILE)) {
-            return DIMLAYER_FILE;
-        }
-        return null;
-    }
-
-    public static String getDitherFile() {
-        if (Utils.fileWritable(DITHER_FILE)) {
-            return DITHER_FILE;
+    public static String getFileIfWritable(String file) {
+        if (Utils.fileWritable(file)) {
+            return file;
         }
         return null;
     }
@@ -55,8 +48,8 @@ public class DCModeSwitch implements OnPreferenceChangeListener {
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         Boolean enabled = (Boolean) newValue;
-        Utils.writeValue(getDimlayerFile(), enabled ? "1" : "0");
-        Utils.writeValue(getDitherFile(), enabled ? "1" : "0");
+        Utils.writeValue(getFileIfWritable(DIMLAYER_FILE), enabled ? "1" : "0");
+        Utils.writeValue(getFileIfWritable(DITHER_FILE), enabled ? "1" : "0");
         return true;
     }
 }
