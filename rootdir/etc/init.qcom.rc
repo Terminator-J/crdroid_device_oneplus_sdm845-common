@@ -70,7 +70,6 @@ on init
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
 on post-fs
-    chmod 0755 /sys/kernel/debug/tracing
 
     # Vibration
     chown system system /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,haptics@c000/leds/vibrator/vmax_mv_call
