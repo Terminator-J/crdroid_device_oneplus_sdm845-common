@@ -222,6 +222,9 @@ on boot
     enable vendor.dataqti
     enable vendor.dataadpl
 
+on boot && property:persist.sys.usb.config=*
+    setprop sys.usb.config ${persist.sys.usb.config}
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
