@@ -62,6 +62,15 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+    # Add shim for missing symbol in lib-imsvt.so
+    system_ext/lib64/lib-imsvideocodec.so)
+        ${PATCHELF} --add-needed "lib-imsvtshim.so" "${2}"
+        ;;
+    esac
+}
+
 if [ -z "${ONLY_FIRMWARE}" ] && [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
     setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
