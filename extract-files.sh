@@ -67,6 +67,10 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.oneplus.rc)
             sed -i "s/@2.1-service$/@2.1-service.oneplus/" "${2}"
             ;;
+        # Add shim for missing symbol in lib-imsvt.so
+        system_ext/lib64/lib-imsvideocodec.so)
+            ${PATCHELF} --add-needed "lib-imsvtshim.so" "${2}"
+            ;;
     esac
 }
 
