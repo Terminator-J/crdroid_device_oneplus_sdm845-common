@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+                   2017-2022 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Alert Slider -->
+    <string name="slider_title">Alert Slider</string>
+    <string name="mute_media_title">Medienlautstärke stummschalten</string>
+    <string name="mute_media_summary">Schalten Sie die Medienlautstärke aus, wenn der Alarm-Schieberegler auf lautlos eingestellt ist</string>
+    <string name="mute_media_warning">Dies gilt nur für Lautsprecher</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Wert: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Voreinstellung</string>
+    <string name="custom_seekbar_default_value_to_set">Standardwert: <xliff:g id="v">%s</xliff:g>\nZum Einstellen lange drücken</string>
+    <string name="custom_seekbar_default_value_is_set">Der Standardwert ist eingestellt</string>
+    <!-- Device Settings -->
+    <string name="device_title">OnePlus Labor</string>
+    <string name="device_summary">Passen Sie OnePlus-spezifische Geräteeinstellungen an</string>
+    <!-- Display Modes -->
+    <string name="display_title">Displaymodus</string>
+    <string name="hbm_mode_summary">Aktivieren Sie sofort die Spitzenhelligkeit des Displays</string>
+    <string name="hbm_mode_title">Hohe Helligkeit</string>
+    <string name="auto_hbm_summary">Aktivieren Sie die Spitzenleuchtdichte basierend auf Sonnenlicht</string>
+    <string name="auto_hbm_title">Automatische hohe Helligkeit</string>
+    <string name="auto_hbm_threshold_title">Automatisch Hohe Helligkeitsschwelle (Lux)</string>
+    <string name="auto_hbm_threshold_summary">Passen Sie die Spitzenhelligkeit des Displays an </string>
+    <string name="tile_hbm_mode">Hohe Helligkeit</string>
+    <string name="dc_mode_summary">Dimmen Sie die Hintergrundbeleuchtung, indem Sie den vom Display gezogenen Gleichstrom anpassen</string>
+    <string name="dc_mode_title">DC-Bildschirmdimmen</string>
+    <!-- Doze -->
+    <string name="doze_panel_title">Schlummern</string>
+    <!-- FPS Info -->
+    <string name="fps_title">FPS Info</string>
+    <string name="fps_info_title">FPS-Überlagerung</string>
+    <string name="fps_info_summary">Überlagerung mit aktuellen Bildern pro Sekunde anzeigen</string>
+    <string name="fps_info_color_title">Textfarbe</string>
+    <string name="fps_info_color_green">Grün</string>
+    <string name="fps_info_color_red">Rot</string>
+    <string name="fps_info_color_blue">Blau</string>
+    <string name="fps_info_color_yellow">Geld</string>
+    <string name="fps_info_color_black">Schwarz</string>
+    <string name="fps_info_color_accent">Folge System</string>
+    <string name="fps_info_position_title">Überlagerungsposition</string>
+    <string name="fps_info_position_top_left">Oben links</string>
+    <string name="fps_info_position_top_center">Oben mitte</string>
+    <string name="fps_info_position_top_right">Oben rechts</string>
+    <string name="fps_info_position_bottom_left">Unten links</string>
+    <string name="fps_info_position_bottom_center">Unten mitte</string>
+    <string name="fps_info_position_bottom_right">Unten rechts</string>
+    <string name="fps_info_text_size_title">Text Größe</string>
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">Diese Funktion ist im aktuellen Kernel nicht verfügbar</string>
+    <!-- Vibration Strength -->
+    <string name="category_vibrator">Vibrator</string>
+    <string name="vib_strength_title_head">Stärke</string>
+    <string name="vib_strength_summary_head">Definieren Sie die Stärke des Vibrationsmotors</string>
+</resources>

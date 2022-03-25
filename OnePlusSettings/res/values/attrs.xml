@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 The LineageOS Project
+<!-- Copyright (C) 2018 The Dirty Unicorns Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,7 +14,12 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Sensor types -->
-    <string name="pickup_sensor_type">oneplus.sensor.pickup</string>
-    <string name="pocket_sensor_type">oneplus.sensor.pocket</string>
+   <!-- Base attributes available to CustomSeekBarPreference. -->
+    <declare-styleable name="CustomSeekBarPreference">
+        <attr name="interval" format="integer" />
+        <attr name="showSign" format="boolean" />
+        <attr name="units" format="string|reference" />
+        <attr name="continuousUpdates" format="boolean" />
+        <attr name="defaultText" format="string|reference" />
+    </declare-styleable>
 </resources>

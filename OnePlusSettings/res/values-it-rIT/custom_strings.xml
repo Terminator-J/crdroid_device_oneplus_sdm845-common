@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+                   2017-2022 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Alert Slider -->
+    <string name="slider_title">Alert Slider</string>
+    <string name="mute_media_title">Muta volume dei media</string>
+    <string name="mute_media_summary">Spegni il volume multimediale quando l\'alert slider è impostato su silenzioso</string>
+    <string name="mute_media_warning">Avrà effetto solo per l\'altoparlante</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valore: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Default</string>
+    <string name="custom_seekbar_default_value_to_set">Valore di default: <xliff:g id="v">%s</xliff:g>\nPressione prolungata per impostare</string>
+    <string name="custom_seekbar_default_value_is_set">Valore di default impostato</string>
+    <!-- Device Settings -->
+    <string name="device_title">OnePlus Laboratorio</string>
+    <string name="device_summary">Regola le impostazioni specifiche dei dispositivi OnePlus</string>
+    <!-- Display Modes -->
+    <string name="display_title">Modalità display</string>
+    <string name="hbm_mode_summary">Abilità istantaneamente la luminosità massima dello schermo</string>
+    <string name="hbm_mode_title">Alta luminosità</string>
+    <string name="auto_hbm_summary">Abilita la luminosità di picco in base alla luce solare</string>
+    <string name="auto_hbm_title">Alza automaticamente la luminosità</string>
+    <string name="auto_hbm_threshold_title">Alza automaticamente la soglia di luminosità (lux)</string>
+    <string name="auto_hbm_threshold_summary">Regola la luminosità di picco del display </string>
+    <string name="tile_hbm_mode">Alta luminosità</string>
+    <string name="dc_mode_summary">Abbassa la retroilluminazione regolando la corrente DC assorbita dal display</string>
+    <string name="dc_mode_title">DC Dimming</string>
+    <!-- Doze -->
+    <string name="doze_panel_title">Doze</string>
+    <!-- FPS Info -->
+    <string name="fps_title">FPS Info</string>
+    <string name="fps_info_title">FPS Overlay</string>
+    <string name="fps_info_summary">Mostra la sovrapposizione con i fotogrammi al secondo</string>
+    <string name="fps_info_color_title">Colore del testo</string>
+    <string name="fps_info_color_green">Verde</string>
+    <string name="fps_info_color_red">Rosso</string>
+    <string name="fps_info_color_blue">Blu</string>
+    <string name="fps_info_color_yellow">Giallo</string>
+    <string name="fps_info_color_black">Nero</string>
+    <string name="fps_info_color_accent">Segui il sistema</string>
+    <string name="fps_info_position_title">Posizione overlay</string>
+    <string name="fps_info_position_top_left">In alto a sinistra</string>
+    <string name="fps_info_position_top_center">In alto al centro</string>
+    <string name="fps_info_position_top_right">In alto a destra</string>
+    <string name="fps_info_position_bottom_left">In basso a sinistra</string>
+    <string name="fps_info_position_bottom_center">In basso al centro</string>
+    <string name="fps_info_position_bottom_right">In basso a destra</string>
+    <string name="fps_info_text_size_title">Dimensioni del testo</string>
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">Questa impostazione non è disponibile per il kernel corrente</string>
+    <!-- Vibration Strength -->
+    <string name="category_vibrator">Vibrazione</string>
+    <string name="vib_strength_title_head">Forza</string>
+    <string name="vib_strength_summary_head">Definisce la forza del motore della vibrazione</string>
+</resources>

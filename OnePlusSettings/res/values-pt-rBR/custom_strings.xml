@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+                   2017-2022 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Alert Slider -->
+    <string name="slider_title">Slider de Som</string>
+    <string name="mute_media_title">Deixar o volume da mídia mudo</string>
+    <string name="mute_media_summary">Desativar volume da mídia quando o slider estiver no modo silencioso</string>
+    <string name="mute_media_warning">Isso apenas terá efeito para os altifalantes</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Padrão</string>
+    <string name="custom_seekbar_default_value_to_set">Valor padrão: <xliff:g id="v">%s</xliff:g>\nSegure para definir</string>
+    <string name="custom_seekbar_default_value_is_set">Valor padrão definido</string>
+    <!-- Device Settings -->
+    <string name="device_title">OnePlus Laboratório</string>
+    <string name="device_summary">Configurações específicas da fabricante</string>
+    <!-- Display Modes -->
+    <string name="display_title">Modos de tela</string>
+    <string name="hbm_mode_summary">Ativar instantaneamente o pico do nível iluminação da tela</string>
+    <string name="hbm_mode_title">Alto brilho</string>
+    <string name="auto_hbm_summary">Ativar pico de brilho da tela baseado na luz do sol</string>
+    <string name="auto_hbm_title">Alto brilho automático</string>
+    <string name="auto_hbm_threshold_title">Limite de alto brilho automático (lux)</string>
+    <string name="auto_hbm_threshold_summary">Ajustar a luminância de pico da tela </string>
+    <string name="tile_hbm_mode">Alto brilho</string>
+    <string name="dc_mode_summary">Reduzir o brilho mínimo ajustando a corrente de alimentação da tela</string>
+    <string name="dc_mode_title">Escurecimento por diminuição de corrente</string>
+    <!-- Doze -->
+    <string name="doze_panel_title">Doze</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Informação de FPS</string>
+    <string name="fps_info_title">Ícone de FPS</string>
+    <string name="fps_info_summary">Mostrar ícone flutuante com o FPS atual</string>
+    <string name="fps_info_color_title">Cor do texto</string>
+    <string name="fps_info_color_green">Verde</string>
+    <string name="fps_info_color_red">Vermelho</string>
+    <string name="fps_info_color_blue">Azul</string>
+    <string name="fps_info_color_yellow">Amarelo</string>
+    <string name="fps_info_color_black">Preto</string>
+    <string name="fps_info_color_accent">Seguir sistema</string>
+    <string name="fps_info_position_title">Posição do ícone</string>
+    <string name="fps_info_position_top_left">Topo da esquerda</string>
+    <string name="fps_info_position_top_center">Topo do centro</string>
+    <string name="fps_info_position_top_right">Topo da direita</string>
+    <string name="fps_info_position_bottom_left">Parte inferior esquerda</string>
+    <string name="fps_info_position_bottom_center">Parte inferior central</string>
+    <string name="fps_info_position_bottom_right">Parte inferior direita</string>
+    <string name="fps_info_text_size_title">Tamanho do Texto</string>
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">O recurso está indisponível no kernel atual</string>
+    <!-- Vibration Strength -->
+    <string name="category_vibrator">Vibração</string>
+    <string name="vib_strength_title_head">Força</string>
+    <string name="vib_strength_summary_head">Define a força do motor de vibração</string>
+</resources>

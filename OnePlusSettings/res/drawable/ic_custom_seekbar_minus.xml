@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 The LineageOS Project
+<!--
+     Copyright (C) 2018 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,8 +14,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- Sensor types -->
-    <string name="pickup_sensor_type">oneplus.sensor.pickup</string>
-    <string name="pocket_sensor_type">oneplus.sensor.pocket</string>
-</resources>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24.0dp"
+        android:height="24.0dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0" >
+    <path
+        android:fillColor="?android:attr/colorControlNormal"
+        android:pathData="M14.102040767669678,13 H0.10204076766967773 V11 H14.102040767669678 V13 z" />
+</vector>

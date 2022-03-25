@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+                   2017-2022 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Alert Slider -->
+    <string name="slider_title">Слайдер оповещений</string>
+    <string name="mute_media_title">Приглушение громкости мультимедиа</string>
+    <string name="mute_media_summary">Заглушить громкость мультимедиа, если ползунок оповещения установлен в положение \"Без звука\"</string>
+    <string name="mute_media_warning">Это воздействует только на динамик</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Значение: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">По умолчанию</string>
+    <string name="custom_seekbar_default_value_to_set">Значение по умолчанию: <xliff:g id="v">%s</xliff:g>\nДлительное нажатие для установки</string>
+    <string name="custom_seekbar_default_value_is_set">Значение по умолчанию установлено</string>
+    <!-- Device Settings -->
+    <string name="device_title">Настройки OnePlus Лаборатория</string>
+    <string name="device_summary">Настройка специфических параметров устройства OnePlus</string>
+    <!-- Display Modes -->
+    <string name="display_title">Режимы экрана</string>
+    <string name="hbm_mode_summary">Мгновенное включение пиковой яркости дисплея</string>
+    <string name="hbm_mode_title">Высокая яркость</string>
+    <string name="auto_hbm_summary">Включить пиковую яркость на солнечном свете</string>
+    <string name="auto_hbm_title">Автоматическая Высокая яркость</string>
+    <string name="auto_hbm_threshold_title">Автоматический Верхний порог яркости (люкс)</string>
+    <string name="auto_hbm_threshold_summary">Автоматический порог высокой яркости (люкс) </string>
+    <string name="tile_hbm_mode">Высокая яркость</string>
+    <string name="dc_mode_summary">Регулировка яркости подсветки путем изменения постоянного тока, подаваемого на дисплей</string>
+    <string name="dc_mode_title">Регулировка постоянного тока</string>
+    <!-- Doze -->
+    <string name="doze_panel_title">Doze</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Информация о FPS</string>
+    <string name="fps_info_title">Оверлей FPS</string>
+    <string name="fps_info_summary">Показывать наложение с текущей частотой кадров в секунду</string>
+    <string name="fps_info_color_title">Цвет текста</string>
+    <string name="fps_info_color_green">Зеленый</string>
+    <string name="fps_info_color_red">Красный</string>
+    <string name="fps_info_color_blue">Голубой</string>
+    <string name="fps_info_color_yellow">Желтый</string>
+    <string name="fps_info_color_black">Черный</string>
+    <string name="fps_info_color_accent">Следование системе</string>
+    <string name="fps_info_position_title">Позиция надстройки</string>
+    <string name="fps_info_position_top_left">Слева вверху</string>
+    <string name="fps_info_position_top_center">По центру сверху</string>
+    <string name="fps_info_position_top_right">Справа вверху</string>
+    <string name="fps_info_position_bottom_left">Слева внизу</string>
+    <string name="fps_info_position_bottom_center">По центру снизу</string>
+    <string name="fps_info_position_bottom_right">Справа внизу</string>
+    <string name="fps_info_text_size_title">Размер текста</string>
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">Эта функция недоступна на текущем ядре</string>
+    <!-- Vibration Strength -->
+    <string name="category_vibrator">Вибрация</string>
+    <string name="vib_strength_title_head">Сила вибрации</string>
+    <string name="vib_strength_summary_head">Выберите силу вибрации</string>
+</resources>
