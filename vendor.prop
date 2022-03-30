@@ -109,7 +109,11 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
-persist.vendor.camera.privapp.list=com.oneplus.factorymode,com.oneplus.camera,com.oem.autotest,com.oneplus.healthcheck
+persist.camera.assert.panic=true
+persist.vendor.camera.privapp.list=com.oneplus.factorymode,com.oneplus.camera,com.oneplus.camera.service
+ro.com.google.lens.oem_camera_package=com.oneplus.camera
+ro.opcamera.support=true
+vendor.camera.skip_unconfigure.packagelist=com.oneplus.camera
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
