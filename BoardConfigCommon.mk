@@ -120,9 +120,6 @@ TARGET_USES_FOD_ZPOS := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
