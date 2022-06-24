@@ -158,6 +158,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     liba2dpoffload
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl:64 \
