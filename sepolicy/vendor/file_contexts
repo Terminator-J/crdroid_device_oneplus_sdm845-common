@@ -49,4 +49,5 @@
 /sys/module/workqueue/parameters/power_efficient             u:object_r:sysfs_workqueue:s0
 /sys/project_info(/.*)?                                      u:object_r:sysfs_project_info:s0
 /sys/kernel/fast_charge/force_fast_charge                    u:object_r:sysfs_fastcharge:s0
+/sys/bus/platform/devices/1d84000.ufshc/clkscale_enable      u:object_r:sysfs_scsi_host:s0
 /sys/class/power_supply/usb/otg_switch                       u:object_r:sysfs_usb_supply:s0
