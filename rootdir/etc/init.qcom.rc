@@ -558,9 +558,9 @@ on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
 # corefile limit
-on property:persist.debug.trace=1
-    mkdir /data/core 0777 root root
-    write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
+#on property:persist.debug.trace=1
+#    mkdir /data/core 0777 root root
+#    write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
 
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
@@ -762,6 +762,7 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     group root system wakelock graphics
     disabled
     oneshot
+    seclabel u:r:qti_init_shell:s0
 
 service qti-testscripts /system/bin/sh /product/etc/init.qcom.testscripts.sh
     class late_start
