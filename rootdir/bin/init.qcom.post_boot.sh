@@ -1079,11 +1079,7 @@ function enable_memory_features()
 
 function start_hbtp()
 {
-        # Start the Host based Touch processing but not in the power off mode.
-        bootmode=`getprop ro.bootmode`
-        if [ "charger" != $bootmode ]; then
-                start vendor.hbtp
-        fi
+    ;;
 }
 
 case "$target" in
@@ -1433,14 +1429,14 @@ case "$target" in
                         "Surf")
                             case "$platform_subtype_id" in
                                 "1" | "2")
-                                    start_hbtp
+                                    # start_hbtp
                                 ;;
                             esac
                         ;;
                         "MTP")
                             case "$platform_subtype_id" in
                                 "3")
-                                    start_hbtp
+                                    # start_hbtp
                                 ;;
                             esac
                         ;;
@@ -2280,7 +2276,7 @@ case "$target" in
                         #1200p panel is connected to the device.
                         dir="/sys/bus/i2c/devices/3-0038"
                         if [ ! -d "$dir" ]; then
-                              start_hbtp
+                              # start_hbtp
                         fi
                         ;;
                 esac
@@ -2289,7 +2285,7 @@ case "$target" in
                     case "$hw_platform" in
                         "QRD" )
                             if [ $platform_subtype_id -eq "1" ]; then
-                               start_hbtp
+                               # start_hbtp
                             fi
                             ;;
                     esac
@@ -2431,7 +2427,7 @@ case "$target" in
             # Start Host based Touch processing
             case "$hw_platform" in
                  "MTP" | "Surf" | "RCM" | "QRD" )
-                          start_hbtp
+                          # start_hbtp
                     ;;
             esac
 
@@ -2616,14 +2612,14 @@ case "$target" in
                   # Start Host based Touch processing
                   case "$hw_platform" in
                     "MTP" )
-			start_hbtp
+			# start_hbtp
                         ;;
                   esac
 
                   case "$hw_platform" in
                     "Surf" | "RCM" )
 			if [ $platform_subtype_id -ne "4" ]; then
-			    start_hbtp
+			    # start_hbtp
 		        fi
                         ;;
                   esac
@@ -2707,7 +2703,7 @@ case "$target" in
                   # Start Host based Touch processing
                   case "$hw_platform" in
                     "MTP" | "Surf" | "RCM" )
-                        start_hbtp
+                        # start_hbtp
                         ;;
                   esac
 
@@ -2807,7 +2803,7 @@ case "$target" in
                 # Start Host based Touch processing
                 case "$hw_platform" in
                     "MTP" | "Surf" | "RCM" | "QRD" )
-                    start_hbtp
+                    # start_hbtp
                 ;;
                 esac
 
@@ -3028,7 +3024,7 @@ case "$target" in
                 # Start Host based Touch processing
                 case "$hw_platform" in
                     "QRD" )
-                    start_hbtp
+                    # start_hbtp
                 ;;
                 esac
 	    ;;
@@ -3112,7 +3108,7 @@ case "$target" in
             # Start Host based Touch processing
                 case "$hw_platform" in
                         "MTP" | "Surf" | "RCM" | "QRD" )
-                        start_hbtp
+                        # start_hbtp
                         ;;
                 esac
             ;;
@@ -3124,7 +3120,7 @@ case "$target" in
             # Start Host based Touch processing
             case "$hw_platform" in
                 "MTP" | "Surf" | "RCM" | "QRD" )
-                start_hbtp
+                # start_hbtp
                 ;;
             esac
 
@@ -3313,7 +3309,7 @@ case "$target" in
             # Start Host based Touch processing
             case "$hw_platform" in
               "MTP" | "Surf" | "RCM" | "QRD" )
-                  start_hbtp
+                  # start_hbtp
                   ;;
             esac
 
@@ -4456,11 +4452,11 @@ case "$target" in
             # Start Host based Touch processing
             case "$hw_platform" in
               "Surf" | "RCM" | "QRD" )
-                  start_hbtp
+                  # start_hbtp
                   ;;
               "MTP" )
                   if [ $platform_subtype_id != 5 ]; then
-                      start_hbtp
+                      # start_hbtp
                   fi
                   ;;
             esac
@@ -4975,12 +4971,12 @@ case "$target" in
                                    "32") #QVR845 do nothing
                                      ;;
                                    *)
-                                         start_hbtp
+                                         # start_hbtp
                                      ;;
                             esac
                      ;;
                     *)
-                          start_hbtp
+                          # start_hbtp
                      ;;
                 esac
          ;;
@@ -5265,13 +5261,13 @@ case "$target" in
             # Start Host based Touch processing
             case "$platform_subtype_id" in
                 "0" | "1" | "2" | "3" | "4")
-                    start_hbtp
+                    # start_hbtp
                     ;;
             esac
         ;;
         "HDK" )
             if [ -d /sys/kernel/hbtpsensor ] ; then
-                start_hbtp
+                # start_hbtp
             fi
         ;;
     esac
@@ -5479,13 +5475,13 @@ case "$target" in
             # Start Host based Touch processing
             case "$platform_subtype_id" in
                 "0" | "1")
-                    start_hbtp
+                    # start_hbtp
                     ;;
             esac
         ;;
         "HDK" )
             if [ -d /sys/kernel/hbtpsensor ] ; then
-                start_hbtp
+                # start_hbtp
             fi
         ;;
     esac
@@ -5819,11 +5815,11 @@ case "$target" in
 		"QRD")
 			case "$platform_subtype_id" in
 				"0")
-					start_hbtp
+					# start_hbtp
 					;;
 				"16")
 					if [ $platform_major_version -lt 6 ]; then
-						start_hbtp
+						# start_hbtp
 					fi
 					;;
 			esac
