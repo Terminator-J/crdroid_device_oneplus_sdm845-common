@@ -13,6 +13,7 @@ ro.opcamera.              u:object_r:camera_prop:s0
 vendor.camera.            u:object_r:camera_prop:s0
 
 # OnePlus Camera & Gallery
+vendor.oneplus.            u:object_r:oneplus_camera_prop:s0
 vendor.oneplus.gallery.    u:object_r:oneplus_camera_prop:s0
 
 # NFC
