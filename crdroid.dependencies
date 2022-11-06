@@ -12,5 +12,10 @@
     "remote": "crdroid-gitlab",
     "repository": "crdroidandroid/proprietary_vendor_oneplus_op6",
     "target_path": "vendor/oneplus"
+  },
+  {
+    "repository": "Terminator-J/vendor_ih8sn",
+    "target_path": "vendor/ih8sn",
+    "branch": "12.1-test"
   }
 ]
