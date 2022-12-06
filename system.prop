@@ -5,10 +5,17 @@ ro.build.ab_update=true
 ro.kernel.ebpf.supported=true
 
 # Camera
+camera.disable_zsl_mode=true
+persist.camera.assert.panic=true
 persist.vendor.camera.sceneclassify.enable=0
+ro.com.google.lens.oem_camera_package=com.oneplus.camera
+ro.opcamera.support=true
 
 # Charger
 ro.charger.disable_init_blank=true
+
+# Codec
+debug.stagefright.ccodec=1
 
 # CNE
 persist.vendor.cne.feature=1
