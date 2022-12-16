@@ -280,6 +280,10 @@ on boot
     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
     chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
 
+    # Power Efficient Workqueues
+    chown system system /sys/module/workqueue/parameters/power_efficient
+    chmod 0666 /sys/module/workqueue/parameters/power_efficient
+
     # Tri-state-key
     chown system system /sys/devices/platform/soc/soc:tri_state_key/tri_state
     chmod 0666 /sys/devices/platform/soc/soc:tri_state_key/tri_state
