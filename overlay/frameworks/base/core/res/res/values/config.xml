@@ -350,6 +350,9 @@
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
 
+    <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
+    <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
+
 <!-- crDroid-specific customizations below -->
 <!--
      Copyright (C) 2016-2021 crDroid Android Project
