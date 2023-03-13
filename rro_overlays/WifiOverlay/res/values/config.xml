@@ -69,6 +69,11 @@
     <!-- Indicate the device support request channel on Wi-Fi Aware data-path. -->
     <bool translatable="false" name="config_wifiSupportChannelOnDataPath">true</bool>
 
+    <!-- The ratio of the next two parameters is the multiplier that converts the estimated
+         throughput in Mbps to score points, when the throughput is less than 800Mbps. -->
+    <integer translatable="false" name="config_wifiFrameworkThroughputBonusNumerator">300</integer>
+    <integer translatable="false" name="config_wifiFrameworkThroughputBonusDenominator">400</integer>
+
     <!-- Integer specifying the percent bonus for current network. The percent is applied to
          the sum of rssi base score and throughput score (default: 20) -->
     <integer translatable="false" name="config_wifiFrameworkCurrentNetworkBonusPercent">0</integer>
