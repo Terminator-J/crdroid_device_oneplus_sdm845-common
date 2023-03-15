@@ -614,7 +614,8 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # NFC firmware
-vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
+vendor/lib/libpn553_fw.so|e17e1d78a1bb81563c6a47e029f5b04920cf9958
+vendor/lib64/libpn553_fw.so|3fdbabb82baad5a61444a4ebb0e2da5385b8705c
 
 # OMX
 vendor/lib/libAlacSwDec.so
