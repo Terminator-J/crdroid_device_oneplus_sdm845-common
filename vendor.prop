@@ -115,7 +115,7 @@ persist.vendor.camera.privapp.list=com.oneplus.factorymode,com.oneplus.camera,co
 vendor.camera.skip_unconfigure.packagelist=com.oneplus.camera
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SDM845
 
 # CNSS
