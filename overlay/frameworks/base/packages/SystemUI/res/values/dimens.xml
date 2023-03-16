@@ -26,6 +26,10 @@
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">80.0px</dimen>
 
+    <!-- May not actually be in density-independent pixels, just pretend for now -->
+    <dimen name="burnin_protection_horizontal_shift">0.67dp</dimen>
+    <dimen name="burnin_protection_vertical_shift">0.5dp</dimen>
+
     <!-- Tri-state UI -->
     <dimen name="tri_state_down_dialog_position">423.0px</dimen>
     <dimen name="tri_state_down_dialog_position_l">270.375px</dimen>
