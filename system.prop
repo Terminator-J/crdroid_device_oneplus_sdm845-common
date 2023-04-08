@@ -4,6 +4,9 @@ ro.build.ab_update=true
 # BPF
 ro.kernel.ebpf.supported=true
 
+# Camera
+log.tag.CHIUSECASE=ERROR
+
 # CNE
 persist.vendor.cne.feature=1
 
