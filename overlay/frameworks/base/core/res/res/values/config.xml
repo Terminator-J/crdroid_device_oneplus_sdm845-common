@@ -430,8 +430,7 @@
 
     <!-- Parallel space blocklist -->
     <string-array name="config_parallelSpaceBlocklist">
-        <item>com.android.launcher3</item>
-        <item>com.google.android.apps.nexuslauncher</item>
+        <item>org.lineageos.settings.device</item>
         <item>org.lineageos.oneplus.DeviceExtras</item>
     </string-array>
 </resources>
