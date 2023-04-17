@@ -933,10 +933,6 @@ else
         echo 0 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
         echo 0 > /sys/module/process_reclaim/parameters/enable_process_reclaim
         disable_core_ctl
-        # Enable oom_reaper for Go devices
-        if [ -f /proc/sys/vm/reap_mem_on_sigkill ]; then
-            echo 1 > /proc/sys/vm/reap_mem_on_sigkill
-        fi
     else
 
         # Read adj series and set adj threshold for PPR and ALMK.
@@ -979,11 +975,6 @@ else
         # Enable adaptive LMK for all targets &
         # use Google default LMK series for all 64-bit targets >=2GB.
         echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
-
-        # Enable oom_reaper
-        if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
-            echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
-        fi
 
         if [[ "$ProductName" != "bengal"* ]]; then
             #bengal has appcompaction enabled. So not needed
@@ -4999,9 +4990,6 @@ case "$target" in
 	# Limit the min frequency to 825MHz
 	echo 825000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
-        # Enable oom_reaper
-        echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
-
         # Enable bus-dcvs
         for cpubw in /sys/class/devfreq/*qcom,cpubw*
         do
@@ -5167,9 +5155,9 @@ case "$target" in
         echo 0-3 > /dev/cpuset/background/cpus
         echo 0-3 > /dev/cpuset/system-background/cpus
 
-        # Enable oom_reaper
+        # Disable oom_reaper
 	if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
-		echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
+		echo 0 > /sys/module/lowmemorykiller/parameters/oom_reaper
 	else
 		echo 1 > /proc/sys/vm/reap_mem_on_sigkill
 	fi
