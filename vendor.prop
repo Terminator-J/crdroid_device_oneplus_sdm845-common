@@ -128,6 +128,7 @@ dalvik.vm.image-dex2oat-threads=8
 pm.dexopt.ab-ota=speed-profile
 
 # Display
+debug.sf.disable_backpressure=1
 debug.sf.disable_client_composition_cache=1
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_saturation=1.0
