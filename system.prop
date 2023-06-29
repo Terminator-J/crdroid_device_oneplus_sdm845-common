@@ -1,6 +1,9 @@
 # AB Update
 ro.build.ab_update=true
 
+# Blur
+persist.sys.sf.disable_blurs=1
+
 # BPF
 ro.kernel.ebpf.supported=true
 
