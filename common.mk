@@ -200,6 +200,9 @@ PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 USE_DEX2OAT_DEBUG := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SettingsGoogle
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
