@@ -124,6 +124,9 @@ dalvik.vm.boot-dex2oat-threads=7
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.image-dex2oat-threads=8
 
+# Dexopt OTA
+pm.dexopt.ab-ota=speed-profile
+
 # Display
 debug.sf.disable_client_composition_cache=1
 persist.demo.hdmirotationlock=false
