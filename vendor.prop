@@ -118,6 +118,9 @@ vendor.camera.skip_unconfigure.packagelist=com.oneplus.camera
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM845
 
+# Dexopt OTA
+pm.dexopt.ab-ota=speed-profile
+
 # Display
 debug.sf.disable_client_composition_cache=1
 persist.demo.hdmirotationlock=false
