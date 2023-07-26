@@ -89,6 +89,20 @@ function set_density_by_fb() {
     fi
 }
 
+# Test for OC GPU kernel and set proper max_pwrlevel
+# sdm845 specific but who cares
+gpu_top_freq=(`cat /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpu_available_frequencies`)
+if [ $gpu_top_freq -ge 711000000 ]; then
+    echo 2 > /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_pwrlevel
+    echo "OC GPU kernel detected, setting safe max GPU frequency for boot"
+    echo 710000000 > /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk
+else
+    echo 0 > /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_pwrlevel
+    echo "Non-OC GPU kernel detected, setting stock max GPU frequency for boot"
+    echo 710000000 > /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk
+fi
+
+
 target=`getprop ro.board.platform`
 case "$target" in
     "msm7630_surf" | "msm7630_1x" | "msm7630_fusion")
