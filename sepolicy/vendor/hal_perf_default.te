@@ -1,3 +1,4 @@
+allow hal_perf_default hal_display_config_hwservice:hwservice_manager find;
 allow hal_perf_default hal_pasrmanager_memory_hwservice:hwservice_manager find;
 
 allow hal_perf_default proc_meminfo:file r_file_perms;
