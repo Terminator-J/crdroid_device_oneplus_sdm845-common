@@ -35,6 +35,7 @@ genfscon sysfs /module/qpnp_smb5/parameters/call_on                             
 
 # sysfs (DeviceExtras)
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps    u:object_r:sysfs_graphics:s0
+genfscon sysfs /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/throttling         u:object_r:sysfs_graphics:s0
 genfscon sysfs /kernel/sound_control/earpiece_gain                                              u:object_r:sysfs_sound_control:s0
 genfscon sysfs /kernel/sound_control/mic_gain                                                   u:object_r:sysfs_sound_control:s0
 
