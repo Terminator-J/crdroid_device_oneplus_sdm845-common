@@ -27,6 +27,9 @@
 /data/misc/camera/client_package_name    u:object_r:camera_data_file:s0
 /data/per_boot(/.*)?                     u:object_r:per_boot_file:s0
 
+# DeviceExtras
+/sys/devices(/platform)?/soc/[a-f0-9]+.qcom,kgsl-3d0/kgsl/kgsl-3d0/throttling    u:object_r:sysfs_kgsl_throttling:s0
+
 # Devices
 /dev/dash                 u:object_r:dash_device:s0
 /dev/goodix_fp            u:object_r:fingerprintd_device:s0
