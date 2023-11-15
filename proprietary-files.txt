@@ -61,6 +61,10 @@ vendor/lib/libopf.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
 
+# Audio (Spatial Audio) - from cheetah - TQ3A.230705.001
+vendor/lib/soundfx/libspatialaudio.so|b26727b8887dad56f5e183f7145487c88bd2f065
+vendor/lib64/soundfx/libspatialaudio.so|f5a21e781fac818dcc55d3aa792e2a1902619bdd
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
