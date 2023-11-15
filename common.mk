@@ -400,6 +400,20 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc \
     vendor/ih8sn
 
+# Spatial Audio
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.dynamic.head_tracker.xml
+
+# Spatial Audio: optimize spatializer effect
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.spatializer.effect.util_clamp_min=300
+
+# Spatial Audio: declare use of spatial audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.spatializer_enabled=true \
+    ro.audio.spatializer_transaural_enabled_default=false \
+    persist.vendor.audio.spatializer.speaker_enabled=true
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
