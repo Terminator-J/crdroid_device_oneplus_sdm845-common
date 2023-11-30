@@ -67,9 +67,6 @@ function blob_fixup() {
         product/app/PowerOffAlarm/PowerOffAlarm.apk)
             apktool_patch "${2}" "${MY_DIR}/blob-patches/PowerOffAlarm.patch" -r
             ;;
-        system_ext/lib64/libwfdnative.so)
-            sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
-            ;;
         vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.oneplus.rc)
             sed -i "s/@2.1-service$/@2.1-service.oneplus/" "${2}"
             ;;
