@@ -1,3 +1,5 @@
+allow vendor_init persist_alarm_file:dir { mounton };
+
 allow vendor_init tmpfs:chr_file { read open };
 allow vendor_init tmpfs:dir { create_dir_perms mounton };
 
