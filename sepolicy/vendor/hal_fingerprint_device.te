@@ -23,5 +23,6 @@ allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 allow hal_fingerprint_default vendor_qdsp_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
 
+get_prop(hal_fingerprint_default, system_fingerprint_prop)
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 get_prop(hal_fingerprint_default, vendor_default_prop)
