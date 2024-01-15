@@ -3,7 +3,17 @@ persist.vendor.bluetooth.    u:object_r:vendor_bluetooth_prop:s0
 vendor.oem.bt.               u:object_r:vendor_bluetooth_prop:s0
 
 # Camera
-persist.camera.trace    u:object_r:vendor_camera_prop:s0
+persist.camera.trace                     u:object_r:vendor_camera_prop:s0
+persist.camera.dualcam.mode              u:object_r:vendor_camera_prop:s0
+persist.camera.oneplusEisPreview         u:object_r:vendor_camera_prop:s0
+persist.camera.meta.abnormal             u:object_r:vendor_camera_prop:s0
+persist.camera.videousecase              u:object_r:vendor_camera_prop:s0
+persist.camera.af.lcrEnable              u:object_r:vendor_camera_prop:s0
+persist.camera.dualLEDCalibrationMode    u:object_r:vendor_camera_prop:s0
+persist.camera.facelog.enable            u:object_r:vendor_camera_prop:s0
+persist.camera.param.orientation         u:object_r:vendor_camera_prop:s0
+persist.camera.fd.dump                   u:object_r:vendor_camera_prop:s0
+persist.camera.fixlens                   u:object_r:vendor_camera_prop:s0
 
 # DPM
 persist.vendor.diag.    u:object_r:hwservicemanager_prop:s0
