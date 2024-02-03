@@ -606,7 +606,7 @@ vendor/lib64/unnhal-acc-hvx.so
 # NFC
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/libese-nxp.conf
-vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp.conf|9bef7948675a6950bd4576560029822654af9a67
 vendor/lib/libpn553_fw.so
 
 # OMX - from guacamole - GM1911_11_H.38
