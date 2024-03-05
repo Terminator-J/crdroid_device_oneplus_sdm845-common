@@ -31,7 +31,7 @@
     <bool name="config_deviceSupportsDolby">false</bool>
 
     <!-- Whether device supports Earpiece gain -->
-    <bool name="config_deviceSupportsEarGain">true</bool>
+    <bool name="config_deviceSupportsEarGain">false</bool>
 
     <!-- Whether device supports FPS overlay -->
     <bool name="config_deviceSupportsFPS">true</bool>
@@ -49,7 +49,7 @@
     <bool name="config_deviceSupportsKcal">false</bool>
 
     <!-- Whether device supports Microphone gain -->
-    <bool name="config_deviceSupportsMicGain">true</bool>
+    <bool name="config_deviceSupportsMicGain">false</bool>
 
     <!-- Whether device supports OTG -->
     <bool name="config_deviceSupportsOTG">false</bool>
