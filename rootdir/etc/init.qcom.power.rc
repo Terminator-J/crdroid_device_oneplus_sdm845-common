@@ -226,7 +226,7 @@ on enable-low-power
 
     # Setup CPU BW hax
     # Meh, power savings/heat seems okay; less jitter pls
-    write /sys/devices/platform/soc/soc:qcom,mincpubw/devfreq/soc:qcom,mincpubw/min_freq 6881
+    #write /sys/devices/platform/soc/soc:qcom,mincpubw/devfreq/soc:qcom,mincpubw/min_freq 6881
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1

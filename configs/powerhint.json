@@ -196,6 +196,16 @@
       "ResetOnInit": true
     },
     {
+      "Name": "MinCPUBWMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,mincpubw/min_freq",
+      "Values": [
+        "6881",
+        "762"
+      ],
+      "DefaultIndex": 1,
+      "ResetOnInit": true
+    },
+    {
       "Name": "DoubleTapToWakeEnable",
       "Path": "/proc/touchpanel/double_tap_enable",
       "Values": [
@@ -275,16 +285,10 @@
       "Value": "520000000"
     },
     {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBigClusterMinFreq",
+      "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "MinCPUBWMinFreq",
       "Duration": 0,
-      "Value": "902400"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 0,
-      "Value": "902400"
+      "Value": "762"
     },
     {
       "PowerHint": "INTERACTION",
@@ -323,28 +327,16 @@
       "Value": "2597"
     },
     {
+      "PowerHint": "INTERACTION",
+      "Node": "MinCPUBWMinFreq",
+      "Duration": 0,
+      "Value": "6881"
+    },
+    {
       "PowerHint": "LAUNCH",
       "Node": "SchedBoost",
       "Duration": 3000,
       "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 3000,
-      "Value": "2553600"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 3000,
-      "Value": "1459200"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 3000,
-      "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
@@ -413,16 +405,22 @@
       "Value": "1478400000"
     },
     {
-      "PowerHint": "AUDIO_LAUNCH",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 2000,
-      "Value": "1056000"
+      "PowerHint": "LAUNCH",
+      "Node": "MinCPUBWMinFreq",
+      "Duration": 3000,
+      "Value": "6881"
     },
     {
       "PowerHint": "AUDIO_LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
       "Value": "2c"
+    },
+    {
+      "PowerHint": "AUDIO_LAUNCH",
+      "Node": "MinCPUBWMinFreq",
+      "Duration": 3000,
+      "Value": "6881"
     },
     {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
@@ -435,6 +433,12 @@
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 0,
       "Value": "2c"
+    },
+    {
+      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+      "Node": "MinCPUBWMinFreq",
+      "Duration": 0,
+      "Value": "6881"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -455,10 +459,22 @@
       "Value": "999999999"
     },
     {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "MinCPUBWMinFreq",
+      "Duration": 0,
+      "Value": "6881"
+    },
+    {
       "PowerHint": "DOUBLE_TAP_TO_WAKE",
       "Node": "DoubleTapToWakeEnable",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "MinCPUBWMinFreq",
+      "Duration": 3000,
+      "Value": "6881"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
