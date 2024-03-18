@@ -496,6 +496,9 @@ on property:sys.boot_completed=1
     # to hide Magisk & co.
     chmod 440 /proc/net/unix
 
+    # Assert dominance
+    write /sys/class/kgsl/kgsl-3d0/throttling 0
+
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
 
