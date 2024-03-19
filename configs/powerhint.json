@@ -288,7 +288,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "MinCPUBWMinFreq",
       "Duration": 0,
-      "Value": "762"
+      "Value": "6881"
     },
     {
       "PowerHint": "INTERACTION",
@@ -473,7 +473,7 @@
     {
       "PowerHint": "DOUBLE_TAP_TO_WAKE",
       "Node": "MinCPUBWMinFreq",
-      "Duration": 3000,
+      "Duration": 2000,
       "Value": "6881"
     },
     {
@@ -481,6 +481,12 @@
       "Node": "TASchedtuneBoost",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "MinCPUBWMinFreq",
+      "Duration": 0,
+      "Value": "762"
     }
   ]
 }
