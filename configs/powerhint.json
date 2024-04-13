@@ -125,6 +125,18 @@
       "ResetOnInit": true
     },
     {
+      "Name": "GPUBusMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,gpubw/min_freq",
+      "Values": [
+        "6881",
+        "5931",
+        "3879",
+        "0"
+      ],
+      "DefaultIndex": 2,
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUForceRailOn",
       "Path": "/sys/class/kgsl/kgsl-3d0/force_rail_on",
       "Values": [
@@ -310,6 +322,12 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "GPUBusMinFreq",
+      "Duration": 0,
+      "Value": "6881"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
       "Value": "2597"
@@ -367,6 +385,12 @@
       "Node": "CPUBWSampleMs",
       "Duration": 1000,
       "Value": "10"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GPUBusMinFreq",
+      "Duration": 1000,
+      "Value": "6881"
     },
     {
       "PowerHint": "LAUNCH",
@@ -466,6 +490,12 @@
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUBusMinFreq",
+      "Duration": 0,
+      "Value": "6881"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUIdleTimer",
       "Duration": 0,
       "Value": "10000"
@@ -493,6 +523,12 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "257000000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "GPUBusMinFreq",
+      "Duration": 0,
+      "Value": "0"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
