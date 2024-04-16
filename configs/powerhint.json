@@ -267,26 +267,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "CamSchedtuneBoost",
-      "Path": "/dev/stune/camera-daemon/schedtune.boost",
-      "Values": [
-        "5",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CamSchedtunePreferIdle",
-      "Path": "/dev/stune/camera-daemon/schedtune.prefer_idle",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
       "Name": "FgSchedtunePreferIdle",
       "Path": "/dev/stune/foreground/schedtune.prefer_idle",
       "Values": [
@@ -634,18 +614,6 @@
       "Node": "LLCCBWSampleMs",
       "Duration": 0,
       "Value": "4"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "CamSchedtuneBoost",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "CamSchedtunePreferIdle",
-      "Duration": 0,
-      "Value": "0"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
