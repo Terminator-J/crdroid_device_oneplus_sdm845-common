@@ -280,7 +280,7 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "5",
+        "1",
         "0"
       ],
       "DefaultIndex": 0,
