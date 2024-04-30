@@ -202,16 +202,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "LLCCBWIdleMbps",
-      "Path": "/sys/class/devfreq/soc:qcom,llccbw/bw_hwmon/idle_mbps",
-      "Values": [
-        "1600",
-        "762"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
       "Name": "LLCCBWMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,llccbw/min_freq",
       "Values": [
@@ -615,12 +605,6 @@
       "Node": "GPUThrottling",
       "Duration": 0,
       "Value": "1"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "LLCCBWIdleMbps",
-      "Duration": 0,
-      "Value": "762"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
