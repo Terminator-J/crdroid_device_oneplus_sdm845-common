@@ -366,14 +366,17 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, vendor/oneplus/apps/sdm845/config.mk)
 
 # Power
-$(call inherit-product, hardware/oneplus/libqti-perfd-client/libqti-perfd-client.mk)
-$(call inherit-product, hardware/oneplus/power-libperfmgr/power-libperfmgr.mk)
-
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor
+    android.hardware.power@1.2.vendor \
+    android.hardware.power-service.oneplus-libperfmgr \
+    libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # QMI
 PRODUCT_PACKAGES += \
