@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
+# Derpfest Configurations
+DERP_BUILDTYPE=Envoy-Z-Lab
+DERP_VERSION_APPEND_TIME_OF_DAY=true
+EXTRA_UDFPS_ICONS=true
+TARGET_USES_PICO_GAPPS=true
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -27,7 +33,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
