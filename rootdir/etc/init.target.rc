@@ -97,8 +97,8 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
 
-on boot && property:persist.vendor.usb.controller.default=*
-    setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
+#on boot && property:persist.vendor.usb.controller.default=*
+#    setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
 #ifdef VENDOR_EDIT
    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display@18/dynamic_dsi_clock
