@@ -22,5 +22,11 @@
     "repository": "Terminator-J/vendor_ih8sn",
     "target_path": "vendor/ih8sn",
     "branch": "13.0-test"
+  },
+  {
+    "remote": "crdroid-gitlab",
+    "repository": "crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r522817",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r522817",
+    "branch": "14.0"
   }
 ]
