@@ -6,6 +6,9 @@ on boot
     chown system system /sys/class/leds/green/lut_flags
     chown system system /sys/class/leds/blue/lut_flags
 
+on post-fs-data && property:ro.product.system.device=OnePlus6
+    start vendor.light-default
+
 service vendor.light-default /vendor/bin/hw/android.hardware.light-service.oneplus_sdm845
     class hal
     user system
