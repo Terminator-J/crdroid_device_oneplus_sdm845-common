@@ -100,7 +100,7 @@
          true: firmware roaming will be disabled when the device goes into idle mode, and then
                re-activated when the device exits idle mode.
          false: firmware roaming will not be affected. -->
-    <bool translatable="false" name ="config_wifiDisableFirmwareRoamingInIdleMode">true</bool>
+    <bool translatable="false" name ="config_wifiDisableFirmwareRoamingInIdleMode">false</bool>
 
     <!-- Boolean indicating whether the device should remain connected to a network without DHCP.
         If true, the IpClient provisioning timeout will be set to infinite, which means that the
