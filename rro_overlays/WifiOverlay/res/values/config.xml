@@ -96,6 +96,15 @@
     <integer translatable="false" name="config_wifi_framework_wifi_score_good_rssi_threshold_5GHz">-70</integer>
     <integer translatable="false" name="config_wifi_framework_wifi_score_good_rssi_threshold_24GHz">-60</integer>
 
+    <!-- Enable WPA2 to WPA3 auto-upgrade -->
+    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">true</bool>
+
+    <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
+    <bool translatable="false" name="config_wifiSaeUpgradeOffloadEnabled">false</bool>
+
+    <!-- Enable Open to OWE auto-upgrade -->
+    <bool translatable="false" name="config_wifiOweUpgradeEnabled">true</bool>
+
     <!-- Boolean indicating whether to disable firmware roaming when the device goes into idle mode.
          true: firmware roaming will be disabled when the device goes into idle mode, and then
                re-activated when the device exits idle mode.
