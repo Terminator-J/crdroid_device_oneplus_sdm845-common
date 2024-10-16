@@ -363,6 +363,11 @@
     <!-- Default value for performant auth feature. -->
     <bool name="config_performantAuthDefault">true</bool>
 
+    <!-- Flag indicating whether the surfaceflinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
 <!--
      Copyright (C) 2016-2024 crDroid Android Project
 
@@ -378,24 +383,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-    <!-- Define device configs on boot -->
-    <string-array name="device_configs_override">
-        <!-- ART heap compaction for cached apps -->
-        <item>activity_manager/use_compaction=true</item>
-        <!-- Set Max Cached Processes -->
-        <item>activity_manager/max_cached_processes=1024</item>
-        <!-- Enables proactive killing of cached apps -->
-        <item>activity_manager/proactive_kills_enabled=false</item>
-        <!-- Set Trim Empty time -->
-        <item>activity_manager/max_empty_time_millis=108000000L</item>
-        <!-- Set Freezer Timeout -->
-        <item>activity_manager/freeze_debounce_timeout=10_000L</item>
-        <!-- OOM Adjuster Re-ranking -->
-        <item>activity_manager/use_oom_re_ranking=true</item>
-        <item>activity_manager/oom_re_ranking_number_to_re_rank=16</item>
-        <item>activity_manager/oom_re_ranking_preserve_top_n_apps=8</item>
-    </string-array>
-
     <!-- Whether device has dash charging support -->
     <bool name="config_hasDashCharger">true</bool>
 
@@ -424,7 +411,6 @@
     <string name="config_alertSliderIntent">org.lineageos.oneplus.DeviceExtras.slider.UPDATE_SLIDER_POSITION</string>
 
     <!-- Whether device supports sensor based doze customizations -->
-    <bool name="config_dozePulsePickup">true</bool>
     <bool name="config_dozePulseTilt">true</bool>
     <bool name="config_dozePulseProximity">true</bool>
     <bool name="config_deviceHaveWakeUpProximity">true</bool>
@@ -432,9 +418,21 @@
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
 
-    <!-- Flag indicating whether the surfaceflinger has limited
-         alpha compositing functionality in hardware.  If set, the window
-         manager will disable alpha trasformation in animations where not
-         strictly needed. -->
-    <bool name="config_sf_limitedAlpha">true</bool>
+    <!-- Define device configs on boot -->
+    <string-array name="device_configs_override">
+        <!-- ART heap compaction for cached apps -->
+        <item>activity_manager/use_compaction=true</item>
+        <!-- Set Max Cached Processes -->
+        <item>activity_manager/max_cached_processes=1024</item>
+        <!-- Enables proactive killing of cached apps -->
+        <item>activity_manager/proactive_kills_enabled=false</item>
+        <!-- Set Trim Empty time -->
+        <item>activity_manager/max_empty_time_millis=108000000L</item>
+        <!-- Set Freezer Timeout -->
+        <item>activity_manager/freeze_debounce_timeout=10_000L</item>
+        <!-- OOM Adjuster Re-ranking -->
+        <item>activity_manager/use_oom_re_ranking=true</item>
+        <item>activity_manager/oom_re_ranking_number_to_re_rank=16</item>
+        <item>activity_manager/oom_re_ranking_preserve_top_n_apps=8</item>
+    </string-array>
 </resources>
