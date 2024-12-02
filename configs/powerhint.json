@@ -126,7 +126,7 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
-        "710000000",
+        "520000000",
         "342000000",
         "257000000"
       ],
@@ -349,7 +349,7 @@
       "PowerHint": "INTERACTION",
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
-      "Value": "3879"
+      "Value": "2597"
     },
     {
       "PowerHint": "INTERACTION",
@@ -499,7 +499,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "710000000"
+      "Value": "520000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -511,7 +511,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
-      "Value": "6881"
+      "Value": "3879"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
