@@ -1,3 +1,6 @@
+# CLAT
+persist.vendor.net.doxlat    u:object_r:vendor_xlat_prop:s0
+
 # Power HAL
 vendor.powerhal.             u:object_r:vendor_power_prop:s0
 

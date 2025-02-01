@@ -421,3 +421,7 @@ on property:sys.aod.disable=0
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
+
+on property:persist.vendor.net.doxlat=false
+    # filthy haxx
+    setprop persist.vendor.net.doxlat true
