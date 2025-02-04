@@ -195,6 +195,10 @@ PRODUCT_PACKAGES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# DeviceAsWebcam
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
+
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
@@ -391,7 +395,7 @@ PRODUCT_PACKAGES_DEBUG += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.dual_role_usb \
-    android.hardware.usb.gadget@1.2-service-qti \
+    android.hardware.usb.gadget-service.qti \
     usb_compositions.conf
 
 # Vibrator
