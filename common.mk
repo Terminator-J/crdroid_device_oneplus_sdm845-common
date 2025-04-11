@@ -199,9 +199,7 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     Settings \
-    SettingsGoogle \
-    SystemUI \
-    SystemUIGoogle
+    SystemUI
 
 # Display
 PRODUCT_PACKAGES += \
