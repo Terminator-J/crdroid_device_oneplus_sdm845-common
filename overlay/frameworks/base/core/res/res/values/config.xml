@@ -428,7 +428,7 @@
     <bool name="config_pocketUseLightSensor">false</bool>
 
     <!-- Defines custom OEM sensor for pocket detection. -->
-    <string name="config_pocketJudgeVendorSensorName">android.sensor.proximity</string>
+    <string name="config_pocketJudgeVendorSensorName">oneplus.sensor.pocket</string>
 
     <!-- Whether device has physical tri state switch -->
     <bool name="config_hasAlertSlider">true</bool>
