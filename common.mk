@@ -198,9 +198,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# crDroid inclusions
-TARGET_SUPPORTS_QUICK_TAP := false
-
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
