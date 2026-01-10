@@ -113,6 +113,11 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 TARGET_USES_ION := true
 
 # Partitions
+ifneq ($(WITH_GMS),true)
+BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1110000000 # Reserve ~1.03GiB for GApps, should fit crdroid-official & MindTheGapps comfortably still
+endif
+
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 
 BOARD_SUPER_PARTITION_SIZE := 4177526784
